@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/listButton"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#161133"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+
+    <TextView
+        android:id="@+id/viewData"
+        style="@style/list_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="112dp"
+        android:background="#CCCCCC"
+        android:padding="12dp"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="112dp"
+        tools:text="##/##/####" />
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/list_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:contentDescription="Casos confirmados"
+        android:text="@string/confirmados"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="54dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        style="@style/list_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="116dp"
+        android:contentDescription="Número de óbitos"
+        android:text="@string/obitos"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="54dp" />
+
+    <TextView
+        android:id="@+id/viewConfirm"
+        style="@style/list_view"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="56dp"
+        android:background="#B1B1B1"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@+id/viewHora"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="282dp"
+        tools:text="#" />
+
+    <TextView
+        android:id="@+id/viewObito"
+        style="@style/list_view"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="76dp"
+        android:background="#CFCFCF"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@+id/viewConfirm"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="257dp"
+        tools:text="#" />
+
+    <TextView
+        android:id="@+id/viewHora"
+        style="@style/list_view"
+        android:layout_width="76dp"
+        android:layout_height="28dp"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="206dp"
+        tools:layout_editor_absoluteY="223dp"
+        tools:text="##:##" />
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/list_view"
+        android:layout_width="119dp"
+        android:layout_height="44dp"
+        android:text="@string/hora"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="223dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

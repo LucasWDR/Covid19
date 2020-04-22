@@ -1,0 +1,16 @@
+<resources>
+  <string name="app_name">Boletim Epidemiológico</string>
+  <string name="confirmados">Confirmados</string>
+  <string name="obitos">Óbitos</string>
+  <string name="hora">Horário:</string>
+  <string name="boletim">BOLETIM OFICIAL</string>
+  <string name="cConfirmados">Casos Confirmados:</string>
+  <string name="tHospitalar">Em tratamento hospitalar:</string>
+  <string name="cSuspeitos">Casos Suspeitos:</string>
+  <string name="isolamneto">Em isolamento domiciliar:</string>
+  <string name="descartados">Casos Descartados:</string>
+  <string name="obitos2">Óbitos:</string>
+  <string name="curados">Curados:</string>
+  <string name="monitoramento">Casos em Monitoramento:</string>
+  <string name="estatisticas">Estatísticas</string>
+</resources>

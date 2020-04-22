@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#161133">
+
+        <TextView
+            android:id="@+id/viewData"
+            style="@style/list_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:padding="12dp"
+            android:text="dd/mm/yyyy"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="180dp" />
+
+        <TextView
+            android:id="@+id/viewHora"
+            style="@style/list_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.569"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5"
+            tools:ignore="MissingConstraints"
+            tools:text="99:99" />
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/list_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="152dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/hora"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <TextView
+            android:id="@+id/textView5"
+            style="@style/list_view"
+            android:layout_width="306dp"
+            android:layout_height="96dp"
+            android:contentDescription="Boletim Oficial"
+            android:gravity="center"
+            android:text="@string/boletim"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="47dp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="329dp"
+            android:layout_height="437dp"
+            android:layout_margin="32dp"
+            android:layout_marginBottom="16dp"
+            android:background="#EDEDE2"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/textView7"
+                style="@style/list_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="4dp"
+                android:text="@string/cConfirmados"
+                android:textColor="#000000"
+                app:layout_constraintEnd_toStartOf="@+id/viewConfirm"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/viewConfirm"
+                style="@style/list_view"
+                android:layout_width="153dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:ems="10"
+                android:textAlignment="textEnd"
+                android:textColor="#000000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="#" />
+
+            <TextView
+                android:id="@+id/textView8"
+                style="@style/list_view"
+                android:layout_width="134dp"
+                android:layout_height="33dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="4dp"
+                android:contentDescription="Casos confirmados em tratamento hospitalar"
+                android:text="@string/tHospitalar"
+                android:textColor="#000000"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toStartOf="@+id/viewCHospitalar"
+                app:layout_constraintHorizontal_bias="0.155"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+            <TextView
+                android:id="@+id/viewCHospitalar"
+                style="@style/list_view"
+                android:layout_width="67dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="32dp"
+                android:ems="10"
+                android:paddingRight="1dp"
+                android:textAlignment="textEnd"
+                android:textColor="#000000"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/viewConfirm"
+                tools:text="#" />
+
+            <TextView
+                android:id="@+id/textView9"
+                style="@style/list_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:text="@string/cSuspeitos"
+                android:textColor="#000000"
+                app:layout_constraintEnd_toStartOf="@+id/viewSuspeitos"
+                app:layout_constraintHorizontal_bias="0.194"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="123dp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/viewSuspeitos"
+                style="@style/list_view"
+                android:layout_width="156dp"
+                android:layout_height="19dp"
+                android:layout_marginEnd="16dp"
+                android:ems="10"
+                android:textAlignment="textEnd"
+                android:textColor="#000000"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:layout_editor_absoluteY="123dp"
+                tools:text="#" />
+
+            <TextView
+                android:id="@+id/textView10"
+                style="@style/list_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="4dp"
+                android:contentDescription="Casos suspeitos em tratamento hospitalar"
+                android:text="@string/tHospitalar"
+                android:textColor="#000000"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toStartOf="@+id/viewSHospitalar"
+                app:layout_constraintHorizontal_bias="0.121"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+            <TextView
+                android:id="@+id/viewSHospitalar"
+                style="@style/list_view"
+                android:layout_width="67dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="16dp"
+                android:ems="10"
+                android:paddingRight="1dp"
+                android:textAlignment="textEnd"
+                android:textColor="#000000"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/viewSuspeitos"
+                tools:text="#" />
+
+            <TextView
+                android:id="@+id/textView11"
+                style="@style/list_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="4dp"
+                android:contentDescription="Casos suspeitos em isolamento domiciliar"
+                android:text="@string/isolamneto"
+                android:textColor="#000000"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toStartOf="@+id/viewSHospitalar"
+                app:layout_constraintHorizontal_bias="0.132"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+            <TextView
+                android:id="@+id/viewSDomiciliar"
+                style="@style/list_view"
+                android:layout_width="67dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="16dp"
+                android:ems="10"
+                android:textAlignment="textEnd"
+                android:textColor="#000000"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/viewSHospitalar"
+                tools:text="#" />
+
+            <TextView
+                android:id="@+id/textView13"
+                style="@style/list_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:text="@string/descartados"
+                android:textColor="#000000"
+                app:layout_constraintEnd_toStartOf="@+id/viewDescartados"
+                app:layout_constraintHorizontal_bias="0.516"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="220dp" />
+
+            <TextView
+                android:id="@+id/viewDescartados"
+                style="@style/list_view"
+                android:layout_width="156dp"
+                android:layout_height="19dp"
+                android:layout_marginEnd="16dp"
+                android:ems="10"
+                android:textAlignment="textEnd"
+                android:textColor="#000000"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:layout_editor_absoluteY="220dp"
+                tools:text="#" />
+
+            <TextView
+                android:id="@+id/textView14"
+                style="@style/list_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:text="@string/obitos2"
+                android:textColor="#000000"
+                app:layout_constraintEnd_toStartOf="@+id/viewObitos"
+                app:layout_constraintHorizontal_bias="0.21"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="273dp" />
+
+            <TextView
+                android:id="@+id/viewObitos"
+                style="@style/list_view"
+                android:layout_width="156dp"
+                android:layout_height="19dp"
+                android:layout_marginEnd="16dp"
+                android:ems="10"
+                android:textAlignment="textEnd"
+                android:textColor="#000000"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:layout_editor_absoluteY="273dp"
+                tools:text="#" />
+
+            <TextView
+                android:id="@+id/textView16"
+                style="@style/list_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:text="@string/curados"
+                android:textColor="#000000"
+                app:layout_constraintEnd_toStartOf="@+id/viewObitos"
+                app:layout_constraintHorizontal_bias="0.176"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="326dp" />
+
+            <TextView
+                android:id="@+id/viewCurados"
+                style="@style/list_view"
+                android:layout_width="156dp"
+                android:layout_height="19dp"
+                android:layout_marginEnd="16dp"
+                android:ems="10"
+                android:textAlignment="textEnd"
+                android:textColor="#000000"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:layout_editor_absoluteY="326dp"
+                tools:text="#" />
+
+            <TextView
+                android:id="@+id/textView17"
+                style="@style/list_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:text="@string/monitoramento"
+                android:textColor="#000000"
+                app:layout_constraintEnd_toStartOf="@+id/viewMonitoramento"
+                app:layout_constraintHorizontal_bias="0.296"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="379dp" />
+
+            <TextView
+                android:id="@+id/viewMonitoramento"
+                style="@style/list_view"
+                android:layout_width="91dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="16dp"
+                android:ems="10"
+                android:textAlignment="textEnd"
+                android:textColor="#000000"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:layout_editor_absoluteY="379dp"
+                tools:text="#" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
